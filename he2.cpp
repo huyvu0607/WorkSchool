@@ -399,51 +399,60 @@
 
 
 
-#include <iostream>
-#include <vector>
+//#include <iostream>
+//#include <vector>
+//
+//using namespace std;
+//
+//int QuickSort(int a[], int left, int right, int &k)
+//{
+//	int i, j, x, t;
+//	x = a[(left + right) / 2]; i = left; j = right;
+//	do {
+//		while (a[i] < x) i++;
+//		while (a[j] > x) j--;
+//		if (i <= j) {
+//			t = a[i]; a[i] = a[j]; a[j] = t;
+//			i++; j--;
+//		}
+//	} while (i < j) ;
+//	//if (i == j) i++;
+//	if (k != 0) {
+//		if ((right - i + 1) >= k) {
+//			if (i < right) return QuickSort(a, i, right, k);
+//			return a[right];
+//		}
+//		else {
+//			k = k - (right - i + 1);
+//			if (left < j) return QuickSort(a, left, j, k);
+//			return a[left];
+//		}
+//	}
+//}
+//
+//int main() {
+//	int n;
+//	cout << "so luong phan tu: ";
+//	cin >> n;
+//	cout << "Nhap gia tri cac phan tu: " << endl;
+//	int a[10];
+//	for (int i = 0; i < n; i++) {
+//		cin >> a[i];
+//	}
+//	int k;
+//	cout << "k: ";
+//	cin >> k;
+//
+//	cout<<"phan tu lon thu k: "<< QuickSort(a, 0, n - 1, k);
+//
+//	return 0;
+//}
 
+#include <iostream>
 using namespace std;
 
-int QuickSort(int a[], int left, int right, int &k)
-{
-	int i, j, x, t;
-	x = a[(left + right) / 2]; i = left; j = right;
-	do {
-		while (a[i] < x) i++;
-		while (a[j] > x) j--;
-		if (i <= j) {
-			t = a[i]; a[i] = a[j]; a[j] = t;
-			i++; j--;
-		}
-	} while (i < j) ;
-	//if (i == j) i++;
-	if (k != 0) {
-		if ((right - i + 1) >= k) {
-			if (i < right) return QuickSort(a, i, right, k);
-			return a[right];
-		}
-		else {
-			k = k - (right - i + 1);
-			if (left < j) return QuickSort(a, left, j, k);
-			return a[left];
-		}
-	}
-}
+int dp[];
 
-int main() {
-	int n;
-	cout << "so luong phan tu: ";
-	cin >> n;
-	cout << "Nhap gia tri cac phan tu: " << endl;
-	int a[10];
-	for (int i = 0; i < n; i++) {
-		cin >> a[i];
-	}
-	int k;
-	cout << "k: ";
-	cin >> k;
 
-	cout<<"phan tu lon thu k: "<< QuickSort(a, 0, n - 1, k);
-
-	return 0;
+int main(){
 }
